@@ -86,6 +86,7 @@ def scanning_lfi(TARGET, SHELL, DEFACE):
         if "root" in TARGET_source:
             print "[!] Vulnerable to LFI"
             lfi_found = True
+            break
         elif "/bin/" in TARGET_source:
             print "[!] Vulnerable to LFI"
             lfi_found = True
